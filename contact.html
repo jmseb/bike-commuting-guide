@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Feedback | Bike Commuting Guide</title>
+    <meta name="description" content="Send feedback about the guide." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="bar">
+        <a class="brand" href="index.html">
+          <img src="assets/bike.svg" alt="" width="48" height="29" />
+          Bike Commuting Guide
+        </a>
+        <nav aria-label="Main">
+          <details class="menu">
+            <summary>All guides</summary>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="why-bike.html">Why Bike to Work or School? </a></li>
+              <li><a href="choosing-bike.html">Choosing a Bike</a></li>
+              <li><a href="gear.html">Essential Gear</a></li>
+              <li><a href="bike-fit.html">Bike Fit Basics</a></li>
+              <li><a href="route-planning.html">Planning Your Route</a></li>
+              <li><a href="safety-rules.html">Road Safety Rules</a></li>
+              <li><a href="hand-signals.html">Hand Signals</a></li>
+              <li><a href="rainy-weather.html">Riding in the Rain</a></li>
+              <li><a href="maintenance.html">Basic Maintenance</a></li>
+              <li><a href="fix-flat.html">Fixing a Flat Tire</a></li>
+              <li><a href="locking.html">Locking Parking</a></li>
+              <li><a href="commute-clothes.html">What to Wear? </a></li>
+              <li><a href="bike-and-transit.html">Bikes Public Transit</a></li>
+              <li>
+                <a href="contact.html" aria-current="page">Contact Feedback</a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <article class="page">
+        <h1>Contact Feedback</h1>
+        <p class="lead">Tell us what to add to the guide.</p>
+        <form
+          action="mailto:ejohnmichaelg@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div>
+            <label for="name">Your name</label
+            ><input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email address</label
+            ><input type="email" id="email" name="email" required />
+          </div>
+          <fieldset>
+            <legend>How often do you ride?</legend>
+            <input type="radio" id="daily" name="freq" value="Daily" /><label
+              for="daily"
+            >
+              Daily</label
+            ><br />
+            <input type="radio" id="weekly" name="freq" value="Weekly" /><label
+              for="weekly"
+            >
+              A few times a week</label
+            ><br />
+            <input type="radio" id="new" name="freq" value="New" /><label
+              for="new"
+            >
+              Just starting</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Topics you want more of</legend>
+            <input type="checkbox" id="t1" name="topic1" value="Safety" /><label
+              for="t1"
+            >
+              Safety</label
+            ><br />
+            <input
+              type="checkbox"
+              id="t2"
+              name="topic2"
+              value="Repairs"
+            /><label for="t2"> Repairs</label><br />
+            <input type="checkbox" id="t3" name="topic3" value="Routes" /><label
+              for="t3"
+            >
+              Routes</label
+            >
+          </fieldset>
+          <div>
+            <label for="msg">Message</label
+            ><textarea id="msg" name="message" rows="5"></textarea>
+          </div>
+          <button class="btn" type="submit">Send feedback</button>
+        </form>
+        <nav class="pager" aria-label="Page navigation">
+          <a class="btn alt" href="bike-and-transit.html"
+            >Previous: Bikes Public Transit</a
+          >
+          <a class="btn alt" href="index.html">Home</a>
+        </nav>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <p>Bike Commuting Guide.</p>
+    </footer>
+  </body>
+</html>
